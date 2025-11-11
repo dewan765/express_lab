@@ -4,6 +4,9 @@ require('express');
 const userRouter = 
 require('./routes/users');
 
+const postRouter =
+require('./routes/post');
+
 const app = express(); // Calling this function sets up a server
 app.set('view engine', 'ejs');
 
