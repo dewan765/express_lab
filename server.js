@@ -17,5 +17,8 @@ app.get('/', (req, res) => {
 app.get('/users', (req, res)=>{
     res.send('User List');
 });
+app.get('/post', (req,res)=>{
+    res.send('Post Page');
+});
 
 app.listen(3030); 
