@@ -1,19 +1,39 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
-    <style>
-        .user{
-            border-bottom: 2px solid black;
-        }
-    </style>
+<style>
+
+</style>
 </head>
+
 <body>
-    <h1>Current Users</h1>
+<h1>Current Users</h1>
+
+<table>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Gender</td>
+        <td>Age</td>
+    </tr>
+
     <% users.forEach(user=>{ %>
-        <div class="user">
-            <h3><% user.name %></h3>
-        </div>
+    <tr>
+        <td>
+            <%= user.firstName %>
+        </td>
+        <td>
+            <%= user.lastName %>
+        </td>
+        <td>
+            <%= user.gender %>
+        </td>
+        <td>
+            <%= user.age %>
+        </td>
+    </tr>
     <% }); %>
+
+</table>
+
 </body>
 </html>
